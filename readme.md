@@ -69,7 +69,7 @@ Untracked files:
   
    ```
    git commit -am "Add books and commands used"
-  ```
+   ```
    
 9. Was your commit successful?  How can you check it?  Show your
    command(s) as a code block and explain what you see!
