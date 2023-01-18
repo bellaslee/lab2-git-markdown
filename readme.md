@@ -38,15 +38,29 @@ tasks are comparable.  Here are the tasks:
    4.4.1](https://faculty.washington.edu/otoomet/info201-book/git-basics.html#git-basics-situational-awareness)).
    Show below, in _block quote_, what does it print.
    
+> On branch main
+Your branch is up to date with 'origin/main'.
+
+> Untracked files:
+  > (use "git add <file>..." to include in what will be committed)
+	books.md
+
+> nothing added to commit but untracked files present (use "git add" to track)
+   
    Explain, in plain text, what does it mean.
+   This means that the branch is up to date with the remote repository, but I haven't added the file books.md yet so it is still untracked. If I commit now, the new file will not show up.
    
 6. **add** the new file to the repository (see [course book
   4.4.3](https://faculty.washington.edu/otoomet/info201-book/git-basics.html#git-basics-working-adding)).
   Show your command (as a
   code block).
+  ```
+  git add books.md
+  ```
 
 7. Was your add successful?  Check status again!  Explain what do you
    see.
+   Yes, it says changes to be committed includes the new file `books.md`
    
 8. Now **commit** your changes (see [course book
    4.4.4](https://faculty.washington.edu/otoomet/info201-book/git-basics.html#git-basics-working-committing)). 
