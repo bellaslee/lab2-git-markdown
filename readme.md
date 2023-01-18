@@ -40,40 +40,53 @@ tasks are comparable.  Here are the tasks:
    
 > On branch main
 Your branch is up to date with 'origin/main'.
-
-> Untracked files:
-  > (use "git add <file>..." to include in what will be committed)
+Untracked files:
+(use "git add <file>..." to include in what will be committed)
 	books.md
-
-> nothing added to commit but untracked files present (use "git add" to track)
+	nothing added to commit but untracked files present (use "git add" to track)
    
    Explain, in plain text, what does it mean.
-   This means that the branch is up to date with the remote repository, but I haven't added the file books.md yet so it is still untracked. If I commit now, the new file will not show up.
+   
+   This means that the branch is up to date with the remote repository, but I haven't added the file `books.md` yet so it is still untracked. If I commit now, the new file will not show up.
    
 6. **add** the new file to the repository (see [course book
   4.4.3](https://faculty.washington.edu/otoomet/info201-book/git-basics.html#git-basics-working-adding)).
   Show your command (as a
   code block).
+  
   ```
   git add books.md
   ```
 
 7. Was your add successful?  Check status again!  Explain what do you
    see.
+   
    Yes, it says changes to be committed includes the new file `books.md`
    
 8. Now **commit** your changes (see [course book
    4.4.4](https://faculty.washington.edu/otoomet/info201-book/git-basics.html#git-basics-working-committing)). 
    Put your command underneath in a code block.
+  
+   ```
+   git commit -am "Add books and commands used"
+  ```
    
 9. Was your commit successful?  How can you check it?  Show your
    command(s) as a code block and explain what you see!
+   
+   ```
+   git status
+   ```
+   
+   Yes, my branch is one commit ahead of the main remote branch.
    
 10. Now **push** your changes to Github (see [course book 4.4.5](https://faculty.washington.edu/otoomet/info201-book/git-basics.html#git-basics-working-pushing)).  You may
    need to create access token before you are able to push.
    
 11. Go to your github page.  Can you see the books.md file there with
     all the books listed?
+    
+    Yes
 
 
 ## Folders and relative path
@@ -89,14 +102,34 @@ This task is about adding images and using relative path.
    
 3. check git status.  What do you see?
 
+> On branch main
+Your branch is up to date with 'origin/main'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   readme.md
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	imgs/
+no changes added to commit (use "git add" and/or "git commit -a")
+
 4. add image to the repo.  Show the command you are using in a code
    block.
+   
+   ```
+   cd imgs
+   git add monkey.jpeg
+   ```
    
 5. check status again.  Does it indicate that the image has been
    added?
    
+   Yes
+   
 6. what is the relative path of your image if you start walking there
    from the location of your books.md file?
+   
+   /imgs/monkey.jpeg
    
    You can check if the path is correct with something like `ls
    path-to/file`, e.g.
