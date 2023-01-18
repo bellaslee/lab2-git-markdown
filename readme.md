@@ -147,3 +147,5 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 10. check on github--does your books.md file now contain the image?
 
+Yes
+
